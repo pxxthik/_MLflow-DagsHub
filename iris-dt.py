@@ -28,7 +28,7 @@ n_estimators = 10
 
 mlflow.set_experiment("iris_dt")
 # apply mlflow to train
-with mlflow.start_run(run_name="pk_exp_with_confusion_matrix_log_artifact"):
+with mlflow.start_run():
     mlflow.log_param("max_depth", max_depth)
     # mlflow.log_param("n_estimators", n_estimators)
 
